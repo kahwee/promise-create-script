@@ -25,3 +25,7 @@ createScript(document.body, uri).then(script => {
 	console.error(err)
 })
 ```
+
+## License
+
+MIT
