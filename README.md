@@ -1,5 +1,7 @@
 # promise-create-script
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kahwee/promise-create-script.svg)](https://greenkeeper.io/)
+
 Creates script and returns a promise.
 
 [![Build Status](https://travis-ci.org/kahwee/promise-create-script.svg?branch=master)](https://travis-ci.org/kahwee/promise-create-script)
