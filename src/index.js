@@ -4,7 +4,7 @@
  * @param  {[type]} uri [description]
  * @return {[type]}     [description]
  */
-module.exports = function (el, uri) {
+export default function (el, uri) {
   return new Promise((resolve, reject) => {
     var script = document.createElement('script')
     script.src = uri
