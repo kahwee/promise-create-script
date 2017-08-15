@@ -4,8 +4,8 @@
  * @param  {[type]} uri [description]
  * @return {[type]}     [description]
  */
-export default function (el, uri) {
-  return new Promise((resolve, reject) => {
+module.exports = function (el, uri) {
+  return new Promise(function (resolve, reject) {
     var script = document.createElement('script')
     script.src = uri
     script.type = 'text/javascript'
@@ -13,7 +13,7 @@ export default function (el, uri) {
       resolve(script)
     }
     script.onerror = function (err) {
-      reject(new Error(`Script "${err.target.src}" is not accessible.`))
+      reject(new Error('Script "' + err.target.src + '" is not accessible.'))
     }
     el.appendChild(script)
   })
